@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ce80c4f-25ba-460f-a729-167e1f23f464" name="Default Changelist" comment="" />
+    <list default="true" id="6ce80c4f-25ba-460f-a729-167e1f23f464" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/simulation/Cabine.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/simulation/Echeancier.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/simulation/Etage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/simulation/Evenement.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/simulation/EvenementArriveePassagerPalier.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/simulation/EvenementFermeturePorteCabine.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/simulation/EvenementOuverturePorteCabine.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/simulation/EvenementPassageCabinePalier.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/simulation/EvenementPietonArrivePalier.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/simulation/Global.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/simulation/Immeuble.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/simulation/LoiDePoisson.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/simulation/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/simulation/Passager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/simulation/PressRandomNumberGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EvenementArriveePassagerPalier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EvenementArriveePassagerPalier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simulation2 - Copie/.idea/workspace.xml" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,10 +91,22 @@
       <option name="presentableId" value="Default" />
       <updated>1579689785452</updated>
       <workItem from="1579689790137" duration="841000" />
+      <workItem from="1580131530620" duration="2821000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
