@@ -19,8 +19,10 @@ public class EvenementArriveePassagerPalier extends Evenement {
 	assert étage != null;
 	assert immeuble.étage(étage.numéro()) == étage;
 	Passager p = new Passager(date, étage, immeuble);
-	if (immeuble.cabine.porteOuverte && (immeuble.cabine.intention() == p.sens() || immeuble.cabine.intention() == '-') && ){
-		// TODO
+	if (immeuble.cabine.porteOuverte && (immeuble.cabine.intention() == p.sens() || immeuble.cabine.intention() == '-') && immeuble.cabine.cabinePlein()){
+		immeuble.cabine.faireMonterPassager(p);
+		immeuble.cabine.changerIntention(p.sens());
+		// TODO temps
 	}else {
 		notYetImplemented();
 	}
