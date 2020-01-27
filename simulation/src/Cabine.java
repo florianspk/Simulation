@@ -95,6 +95,15 @@ public class Cabine extends Global {
 	}
 	return c;
     }
+    
+    public boolean CabinePlein() {
+    	if (tableauPassager.length < 5) 
+    		return false;
+    	else {
+    		return true;
+    	}
+    	
+    }
 
     public boolean passagersVeulentDescendre(){
 	int i=tableauPassager.length-1;
