@@ -1,7 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ce80c4f-25ba-460f-a729-167e1f23f464" name="Default Changelist" comment="" />
+    <list default="true" id="6ce80c4f-25ba-460f-a729-167e1f23f464" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/simulation2/Cabine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/simulation2/Echeancier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/simulation2/Etage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/simulation2/Evenement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/simulation2/EvenementArriveePassagerPalier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/simulation2/EvenementFermeturePorteCabine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/simulation2/EvenementOuverturePorteCabine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/simulation2/EvenementPassageCabinePalier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/simulation2/EvenementPietonArrivePalier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/simulation2/Global.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/simulation2/Immeuble.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/simulation2/LoiDePoisson.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/simulation2/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/simulation2/Passager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/simulation2/PressRandomNumberGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulation2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cabine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Echeancier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Etage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Evenement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EvenementArriveePassagerPalier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EvenementFermeturePorteCabine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EvenementOuverturePorteCabine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EvenementPassageCabinePalier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EvenementPietonArrivePalier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Global.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Immeuble.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LoiDePoisson.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Passager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PressRandomNumberGenerator.java" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,14 +48,19 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1WkNllQKdF2ktSQ6PisqSU1S6Mt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../simulation" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -45,7 +87,7 @@
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="simulation2" />
+      <module name="simulation" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -67,10 +109,22 @@
       <option name="presentableId" value="Default" />
       <updated>1579689785452</updated>
       <workItem from="1579689790137" duration="841000" />
+      <workItem from="1580131257959" duration="234000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
