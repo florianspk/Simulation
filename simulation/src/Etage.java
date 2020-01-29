@@ -46,7 +46,7 @@ public class Etage extends Global {
 	buffer.append(numéro());
 	if (this == immeuble.cabine.étage) {
 	    buffer.append(" C ");
-	    if (immeuble.cabine.porteOuverte) {
+	    if (immeuble.cabine.isPorteOuverte()) {
 		buffer.append("[  ]: ");
 	    } else {
 		buffer.append(" [] : ");
@@ -118,4 +118,8 @@ public class Etage extends Global {
 	return (!passagers.isEmpty());
     }
 
+	public void monterPersonne(Cabine cab,Passager p){
+		cab.faireMonterPassager(p);
+		passagers.remove(p);
+	}
 }

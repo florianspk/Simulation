@@ -17,7 +17,7 @@ public class EvenementOuverturePorteCabine extends Evenement {
 
 	notYetImplemented();
 	
-	assert cabine.porteOuverte;
+	assert cabine.isPorteOuverte();
     }
 
 }

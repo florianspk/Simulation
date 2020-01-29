@@ -109,7 +109,9 @@ public class Cabine extends Global {
 	}
 	return false;
     }
-
+	public void personneCabine(Passager p){
+		étage.monterPersonne(this,p);
+	}
 	public boolean isPorteOuverte() {
 		return porteOuverte;
 	}
