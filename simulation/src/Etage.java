@@ -122,4 +122,9 @@ public class Etage extends Global {
 		cab.faireMonterPassager(p);
 		passagers.remove(p);
 	}
+
+	public void supprimerPassager(Passager passager){
+		this.passagers.remove(passager);
+	}
+
 }

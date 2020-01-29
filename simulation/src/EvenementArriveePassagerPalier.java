@@ -23,8 +23,9 @@ public class EvenementArriveePassagerPalier extends Evenement {
 		étage.ajouter(p);
 		this.date = this.date +étage.arrivéeSuivante();
 		echeancier.ajouter(this);
-		if ((c.étage == étage) && c.isPorteOuverte() && (c.intention() == p.sens()) && !c.cabinePlein()){
+		if (c.isPorteOuverte() && (c.intention() == p.sens() || c.intention() == '-') && !c.cabinePlein()){
 			c.personneCabine(p);
+			c.étage.supprimerPassager(p);
 			echeancier.decalerFPC();
 		}
 		assert echeancier.contient(this);
