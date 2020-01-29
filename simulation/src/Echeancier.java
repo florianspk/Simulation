@@ -80,5 +80,11 @@ public class Echeancier extends Global {
 	    }
 	}	
     }
+	public void suppEvenement(EvenementPietonArrivePalier e){
+		listeEvenements.remove(e);
+	}
 
+	public boolean contient(Evenement e){
+		return listeEvenements.contains(e);
+	}
 }
