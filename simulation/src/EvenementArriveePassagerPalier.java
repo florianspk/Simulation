@@ -23,10 +23,15 @@ public class EvenementArriveePassagerPalier extends Evenement {
 		étage.ajouter(p);
 		this.date = this.date +étage.arrivéeSuivante();
 		echeancier.ajouter(this);
-		if (c.isPorteOuverte() && (c.intention() == p.sens() || c.intention() == '-') && !c.cabinePlein()){
-			c.personneCabine(p);
+		if(c.intention() =='-') {
+			c.changerIntention(p.sens());
+		}
+
+		if (c.isPorteOuverte() && (c.intention() == p.sens() )){
+			c.faireMonterPassager(p);
 			c.étage.supprimerPassager(p);
-			echeancier.decalerFPC();
+			//echeancier.decalerFPC();
+			c.setPorteOuverte(false);
 		}
 		assert echeancier.contient(this);
 	}
