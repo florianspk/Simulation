@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6ce80c4f-25ba-460f-a729-167e1f23f464" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/simulation/Echeancier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/simulation/Echeancier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/simulation/Etage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/simulation/Etage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/simulation/EvenementArriveePassagerPalier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/simulation/EvenementArriveePassagerPalier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Etage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Etage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EvenementArriveePassagerPalier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EvenementArriveePassagerPalier.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +20,11 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1WkNllQKdF2ktSQ6PisqSU1S6Mt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -32,6 +32,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -41,16 +44,11 @@
       <recent name="E:\Cours\S4\SIM\simulation2\src" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="git status" />
+      <command value="git checout -- out/*" />
+      <command value="git pull" />
     </option>
   </component>
   <component name="RunManager">
@@ -80,6 +78,7 @@
       <workItem from="1579689790137" duration="841000" />
       <workItem from="1580131530620" duration="5018000" />
       <workItem from="1580290244834" duration="2503000" />
+      <workItem from="1581341176732" duration="2304000" />
     </task>
     <task id="LOCAL-00001" summary="1er iteration">
       <created>1580291306025</created>
@@ -128,5 +127,31 @@
     <MESSAGE value="1er iteration" />
     <MESSAGE value="2eme Iteration" />
     <option name="LAST_COMMIT_MESSAGE" value="2eme Iteration" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1581343311874">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581343311874" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1581343311874">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581343311874" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1581343311874">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581343311874" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1581343311874">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581343311874" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1581342976802">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1581342976802" />
+    <state x="729" y="84" width="672" height="677" key="run.anything.popup" timestamp="1581342982244">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="729" y="84" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1581342982244" />
   </component>
 </project>

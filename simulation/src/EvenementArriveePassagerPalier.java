@@ -30,8 +30,7 @@ public class EvenementArriveePassagerPalier extends Evenement {
 		if (c.isPorteOuverte() && (c.intention() == p.sens() )){
 			c.faireMonterPassager(p);
 			c.étage.supprimerPassager(p);
-			//echeancier.decalerFPC();
-			c.setPorteOuverte(false);
+			echeancier.ajouter(new EvenementFermeturePorteCabine(this.date));
 		}
 		assert echeancier.contient(this);
 	}
