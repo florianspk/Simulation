@@ -18,8 +18,12 @@ public class EvenementFermeturePorteCabine extends Evenement {
 	Cabine cabine = immeuble.cabine;
 	assert cabine.isPorteOuverte();
 	cabine.setPorteOuverte(false);
+    if (!cabine.isPorteOuverte()){
 
-	notYetImplemented();
+    }else {
+        notYetImplemented();
+    }
+
 
 	assert ! cabine.isPorteOuverte();
     }
