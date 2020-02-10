@@ -16,16 +16,12 @@ public class EvenementFermeturePorteCabine extends Evenement {
 
     public void traiter(Immeuble immeuble, Echeancier echeancier) {
 	Cabine cabine = immeuble.cabine;
-	assert cabine.isPorteOuverte();
-	cabine.setPorteOuverte(false);
-    if (!cabine.isPorteOuverte()){
+	assert cabine.porteOuverte;
+	cabine.porteOuverte = false;
 
-    }else {
-        notYetImplemented();
-    }
+	notYetImplemented();
 
-
-	assert ! cabine.isPorteOuverte();
+	assert ! cabine.porteOuverte;
     }
 
 

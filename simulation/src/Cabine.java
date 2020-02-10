@@ -5,7 +5,7 @@ public class Cabine extends Global {
     
     public Etage étage; // actuel, là ou se trouve la Cabine, jamais null.
 
-	private boolean porteOuverte;
+    public boolean porteOuverte;
 
     private char intention; // '-' ou 'v' ou '^'
 
@@ -61,7 +61,7 @@ public class Cabine extends Global {
 	intention = s;
     }
 
-    boolean faireMonterPassager(Passager p) {
+    public boolean faireMonterPassager(Passager p) { 
 	assert p != null;
 	assert ! transporte(p);
 	if (modeParfait) {
@@ -109,18 +109,5 @@ public class Cabine extends Global {
 	}
 	return false;
     }
-	public void personneCabine(Passager p){
-		étage.monterPersonne(this,p);
-	}
-	public boolean isPorteOuverte() {
-		return porteOuverte;
-	}
-
-	public void setPorteOuverte(boolean porteOuverte) {
-		this.porteOuverte = porteOuverte;
-	}
-
-	boolean cabinePlein() {
-		return  (tableauPassager.length < 5);
-	}
+	
 }

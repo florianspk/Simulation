@@ -4,7 +4,7 @@ public class Etage extends Global {
     /* Dans cette classe, vous pouvez ajouter/enlever/modifier/corriger les méthodes, mais vous ne
        pouvez pas ajouter des attributs (variables d'instance).
     */
-    
+
     private int numéro;
     /* Le numéro de l'Etage du point de vue de l'usager (et non pas l'index correspondant
        dans le tableau.
@@ -46,7 +46,7 @@ public class Etage extends Global {
 	buffer.append(numéro());
 	if (this == immeuble.cabine.étage) {
 	    buffer.append(" C ");
-	    if (immeuble.cabine.isPorteOuverte()) {
+	    if (immeuble.cabine.porteOuverte) {
 		buffer.append("[  ]: ");
 	    } else {
 		buffer.append(" [] : ");
@@ -117,14 +117,5 @@ public class Etage extends Global {
     public boolean aDesPassagers(){
 	return (!passagers.isEmpty());
     }
-
-	public void monterPersonne(Cabine cab,Passager p){
-		cab.faireMonterPassager(p);
-		passagers.remove(p);
-	}
-
-	public void supprimerPassager(Passager passager){
-		this.passagers.remove(passager);
-	}
 
 }
