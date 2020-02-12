@@ -38,6 +38,8 @@ public class EvenementFermeturePorteCabine extends Evenement {
                     destination = immeuble.étage(cabine.étage.numéro()-1);
                 }
             }
+        Evenement e = new EvenementPassageCabinePalier(this.date + tempsPourBougerLaCabineDUnEtage, destination);
+        echeancier.ajouter(e);
         }
 
 
