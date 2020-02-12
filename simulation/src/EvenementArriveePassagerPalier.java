@@ -25,37 +25,22 @@ public class EvenementArriveePassagerPalier extends Evenement {
       //INITIALISATION
       if (c.intention() == '-') {
         c.changerIntention(p.sens());
-        //premier FPC
         echeancier.ajouter(new EvenementFermeturePorteCabine(this.date + tempsPourEntrerOuSortirDeLaCabine + tempsPourOuvrirOuFermerLesPortes));
-        //vérification pour rentrer instantanément
-        //vérification de l'etage
         if (étage == c.étage && c.porteOuverte) {
-            //vérification du sens et fait monter passager
             if (c.faireMonterPassager(p)) {
-              //on ajoute un nouvel APP dans l'echeancier
               echeancier.ajouter(new EvenementArriveePassagerPalier(this.date + this.étage.arrivéeSuivante(), this.étage));
             }
         }else{
-          //ajout du passager à son étage de départ
           étage.ajouter(p);
         }
-
-
-        //CAS NORMAL
+        // Cas Normal
       }else{
-        //vérification pour rentrer instantanément
-        //vérification de l'etage
         if (étage == c.étage && c.porteOuverte) {
-            //vérification du sens et fait monter passager
             if (c.faireMonterPassager(p)) {
-              //on ajoute un nouvel APP dans l'echeancier
               echeancier.ajouter(new EvenementArriveePassagerPalier(this.date + this.étage.arrivéeSuivante(), this.étage));
-
-              //on décale la fermeture des portes
               echeancier.decalerFPC();
             }
         }else{
-          //ajout du passager à son étage de départ
           étage.ajouter(p);
         }
       }
