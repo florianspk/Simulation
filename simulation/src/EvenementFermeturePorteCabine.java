@@ -19,7 +19,7 @@ public class EvenementFermeturePorteCabine extends Evenement {
 	assert cabine.porteOuverte;
 	cabine.porteOuverte = false;
 
-        assert ! cabine.porteOuverte;
+        assert !cabine.porteOuverte;
 
         //Faire aller la cabine au prochain étage
         Etage destination = null;
@@ -42,13 +42,13 @@ public class EvenementFermeturePorteCabine extends Evenement {
         } else {
             if(cabine.étage.aDesPassagers()) {
                 destination = immeuble.étage(cabine.numEtageDestinationCabine());
-                cabine.updateSens();
+                cabine.changeSens();
             } else {
-                if(immeuble.passagerAuDessus(cabine.etage)) {
-                    destination = immeuble.etage(cabine.etage.numero()+1);
+                if(immeuble.passagerAuDessus(cabine.étage)) {
+                    destination = immeuble.étage(cabine.étage.numéro()+1);
                     cabine.changerIntention('^');
-                } else if(immeuble.passagerEnDessous(cabine.etage)) {
-                    destination = immeuble.etage(cabine.etage.numero()-1);
+                } else if(immeuble.passagerEnDessous(cabine.étage)) {
+                    destination = immeuble.étage(cabine.étage.numéro()-1);
                     cabine.changerIntention('v');
                 }
             }

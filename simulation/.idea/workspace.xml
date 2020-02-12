@@ -38,6 +38,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -83,7 +84,7 @@
       <workItem from="1580290244834" duration="2503000" />
       <workItem from="1581341176732" duration="4957000" />
       <workItem from="1581412386701" duration="169000" />
-      <workItem from="1581498949422" duration="747000" />
+      <workItem from="1581498949422" duration="1247000" />
     </task>
     <task id="LOCAL-00001" summary="1er iteration">
       <created>1580291306025</created>
@@ -120,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581499091483</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Etape 2">
+      <created>1581499800140</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1581499800140</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,13 +162,14 @@
     <MESSAGE value="2eme Iteration" />
     <MESSAGE value="Fermeture Porte" />
     <MESSAGE value="Etape 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Etape 1" />
+    <MESSAGE value="Etape 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Etape 2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="389" y="6" key="CommitChangelistDialog2" timestamp="1581499089170">
+    <state x="389" y="6" key="CommitChangelistDialog2" timestamp="1581499798889">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="389" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1581499089170" />
+    <state x="389" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1581499798889" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1581499235259">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -181,14 +190,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="240" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581346259852" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1581342976802">
+    <state x="249" y="0" key="SettingsEditor" timestamp="1581499916105">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1581342976802" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1581499105679">
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1581499916105" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1581499801734">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1581499105679" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1581499801734" />
     <state x="729" y="84" width="672" height="677" key="run.anything.popup" timestamp="1581344440255">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
