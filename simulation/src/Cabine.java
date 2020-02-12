@@ -109,5 +109,8 @@ public class Cabine extends Global {
 	}
 	return false;
     }
+    public boolean estPlein(){
+    	return (tableauPassager.length >= 5);
+	}
 	
 }

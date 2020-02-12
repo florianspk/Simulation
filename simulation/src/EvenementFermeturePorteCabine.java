@@ -19,9 +19,43 @@ public class EvenementFermeturePorteCabine extends Evenement {
 	assert cabine.porteOuverte;
 	cabine.porteOuverte = false;
 
-	notYetImplemented();
+        assert ! cabine.porteOuverte;
 
-	assert ! cabine.porteOuverte;
+        //Faire aller la cabine au prochain étage
+        Etage destination = null;
+        if(cabine.estPlein()) {
+            if(cabine.intention() == '^') {
+                if(cabine.étage.numéro() == immeuble.étageLePlusHaut().numéro()) {
+                    cabine.changerIntention('v');
+                    destination = immeuble.étage(cabine.étage.numéro()-1);
+                } else {
+                    destination = immeuble.étage(cabine.étage.numéro()+1);
+                }
+            } else {
+                if(cabine.étage.numéro() == immeuble.étageLePlusBas().numéro()) {
+                    cabine.changerIntention('^');
+                    destination = immeuble.étage(cabine.étage.numéro()+1);
+                } else {
+                    destination = immeuble.étage(cabine.étage.numéro()-1);
+                }
+            }
+        } else {
+            if(cabine.étage.aDesPassagers()) {
+                destination = immeuble.étage(cabine.numEtageDestinationCabine());
+                cabine.updateSens();
+            } else {
+                if(immeuble.passagerAuDessus(cabine.etage)) {
+                    destination = immeuble.etage(cabine.etage.numero()+1);
+                    cabine.changerIntention('^');
+                } else if(immeuble.passagerEnDessous(cabine.etage)) {
+                    destination = immeuble.etage(cabine.etage.numero()-1);
+                    cabine.changerIntention('v');
+                }
+            }
+        }
+        //Etage destination = immeuble.etage(cabine.numEtageDestinationCabine());
+        Evenement e = new EvenementPassageCabinePalier(this.date + tempsPourBougerLaCabineDUnEtage, destination);
+        echeancier.ajouter(e);
     }
 
 
