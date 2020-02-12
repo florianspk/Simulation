@@ -22,8 +22,7 @@ public class EvenementFermeturePorteCabine extends Evenement {
         assert !cabine.porteOuverte;
 
         //Faire aller la cabine au prochain étage
-        Etage destination = immeuble.étage(cabine.numEtageDestinationCabine());
-        if(cabine.estPlein()) {
+        Etage destination;
             if(cabine.intention() == '^') {
                 if(cabine.étage.numéro() == immeuble.étageLePlusHaut().numéro()) {
                     cabine.changerIntention('v');
@@ -39,23 +38,7 @@ public class EvenementFermeturePorteCabine extends Evenement {
                     destination = immeuble.étage(cabine.étage.numéro()-1);
                 }
             }
-        } else {
-            if(cabine.étage.aDesPassagers()) {
-                destination = immeuble.étage(cabine.numEtageDestinationCabine());
-                cabine.changeSens();
-            } else {
-                if(immeuble.passagerAuDessus(cabine.étage)) {
-                    destination = immeuble.étage(cabine.étage.numéro()+1);
-                    cabine.changerIntention('^');
-                } else if(immeuble.passagerEnDessous(cabine.étage)) {
-                    destination = immeuble.étage(cabine.étage.numéro()-1);
-                    cabine.changerIntention('v');
-                }
-            }
         }
-        Evenement e = new EvenementPassageCabinePalier(this.date + tempsPourBougerLaCabineDUnEtage, destination);
-        echeancier.ajouter(e);
-    }
 
 
     public void setDate(long d){
