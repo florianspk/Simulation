@@ -22,7 +22,7 @@ public class EvenementFermeturePorteCabine extends Evenement {
         assert !cabine.porteOuverte;
 
         //Faire aller la cabine au prochain étage
-        Etage destination = null;
+        Etage destination = immeuble.étage(cabine.numEtageDestinationCabine());
         if(cabine.estPlein()) {
             if(cabine.intention() == '^') {
                 if(cabine.étage.numéro() == immeuble.étageLePlusHaut().numéro()) {
@@ -53,7 +53,6 @@ public class EvenementFermeturePorteCabine extends Evenement {
                 }
             }
         }
-        //Etage destination = immeuble.etage(cabine.numEtageDestinationCabine());
         Evenement e = new EvenementPassageCabinePalier(this.date + tempsPourBougerLaCabineDUnEtage, destination);
         echeancier.ajouter(e);
     }
