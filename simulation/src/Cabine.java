@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class Cabine extends Global {
     /* Dans cette classe, vous pouvez ajouter/enlever/modifier/corriger les méthodes, mais vous ne
        pouvez pas ajouter des attributs (variables d'instance).
@@ -13,10 +10,19 @@ public class Cabine extends Global {
     private char intention; // '-' ou 'v' ou '^'
 
     private Passager[] tableauPassager;
+
+    public Passager[] passagers(){ return tableauPassager;}
     /* Ceux qui sont actuellement dans la Cabine. On ne décale jamais les élements.
        Comme toute les collections, il ne faut pas l'exporter.
        Quand on cherche une place libre, on fait le parcours de la gauche vers la droite.
      */
+
+    public boolean estVide() {
+        for (Passager p : tableauPassager) {
+            if (p != null) return false;
+        }
+        return true;
+    }
 
     public Cabine(Etage e) {
 	assert e != null;
@@ -53,47 +59,12 @@ public class Cabine extends Global {
 	}
 	return false;
     }
-	public int numEtageDestinationCabine() {
-		List<Passager> listeMonter = new ArrayList<Passager>();
-		List<Passager> listeDescendre = new ArrayList<Passager>();
-		for(Passager p : this.tableauPassager) {
-			if(p != null) {
-				if(p.étageDestination().numéro() > this.étage.numéro()) {
-					listeMonter.add(p);
-				} else if(p.étageDestination().numéro() < this.étage.numéro()) {
-					listeDescendre.add(p);
-				}
-			}
-		}
-		//Si la majorité des passagers veulent monter
-		int numEtageDestination = this.étage.numéro();
-		if(listeMonter.size() > listeDescendre.size()) {
-			for(Passager p : listeMonter) {
-				if(p.étageDestination().numéro() > numEtageDestination) {
-					numEtageDestination = p.étageDestination().numéro();
-				}
-			}
-		} else {
-			for(Passager p : listeDescendre) {
-				if(p.étageDestination().numéro() < numEtageDestination) {
-					numEtageDestination = p.étageDestination().numéro();
-				}
-			}
-		}
-		return numEtageDestination;
-	}
+
     public char intention() {
 	assert (intention == '-') || (intention == 'v') || (intention == '^');
 	return intention;
     }
-	public char changeSens() {
-		char res = '^';
-		if(this.numEtageDestinationCabine() < this.étage.numéro()) {
-			res = 'v';
-		}
-		this.intention = res;
-		return res;
-	}
+
     public void changerIntention(char s){
 	assert (s == '-') || (s == 'v') || (s == '^');
 	intention = s;
@@ -147,8 +118,8 @@ public class Cabine extends Global {
 	}
 	return false;
     }
-    public boolean estPlein(){
-    	return (tableauPassager.length >= 5);
+
+	public boolean estPlein() {
+    	return tableauPassager.length > Global.nombreDePlacesDansLaCabine+1;
 	}
-	
 }

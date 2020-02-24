@@ -12,12 +12,13 @@ public class EvenementOuverturePorteCabine extends Evenement {
     }
 
     public void traiter(Immeuble immeuble, Echeancier echeancier) {
-	Cabine cabine = immeuble.cabine;
-	Etage étage = cabine.étage;
+		Cabine cabine = immeuble.cabine;
+		Etage étage = cabine.étage;
+		cabine.porteOuverte = true;
+		cabine.faireDescendrePassagers(immeuble, date);
+		if (cabine.estVide()) cabine.changerIntention('-');
 
-	notYetImplemented();
-	
-	assert cabine.porteOuverte;
+		assert cabine.porteOuverte;
     }
 
 }

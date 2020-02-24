@@ -12,6 +12,8 @@ public class Passager {
 
     private Etage étageDestination;
 
+    public long numéroDeCréation(){return numéroDeCréation;}
+
     public long dateDépart() {
 	return this.dateDépart;
     }
@@ -70,5 +72,9 @@ public class Passager {
 	buffer.append(':');
 	buffer.append(dateDépart);
     }
+
+	public char intention(){
+		return (étageDestination.numéro() > étageDépart.numéro() ? '^' : 'v');
+	}
     
 }

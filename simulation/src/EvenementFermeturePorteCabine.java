@@ -19,28 +19,11 @@ public class EvenementFermeturePorteCabine extends Evenement {
 	assert cabine.porteOuverte;
 	cabine.porteOuverte = false;
 
-        assert !cabine.porteOuverte;
+        EvenementPassageCabinePalier.bouger(immeuble, echeancier, cabine, date + Global.tempsPourBougerLaCabineDUnEtage);
+        assert ! cabine.porteOuverte;
+    }
 
-        //Faire aller la cabine au prochain étage
-        Etage destination;
-            if(cabine.intention() == '^') {
-                if(cabine.étage.numéro() == immeuble.étageLePlusHaut().numéro()) {
-                    cabine.changerIntention('v');
-                    destination = immeuble.étage(cabine.étage.numéro()-1);
-                } else {
-                    destination = immeuble.étage(cabine.étage.numéro()+1);
-                }
-            } else {
-                if(cabine.étage.numéro() == immeuble.étageLePlusBas().numéro()) {
-                    cabine.changerIntention('^');
-                    destination = immeuble.étage(cabine.étage.numéro()+1);
-                } else {
-                    destination = immeuble.étage(cabine.étage.numéro()-1);
-                }
-            }
-        Evenement e = new EvenementPassageCabinePalier(this.date + tempsPourBougerLaCabineDUnEtage, destination);
-        echeancier.ajouter(e);
-        }
+
 
 
     public void setDate(long d){

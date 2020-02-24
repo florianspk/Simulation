@@ -3,8 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="6ce80c4f-25ba-460f-a729-167e1f23f464" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/simulation/EvenementFermeturePorteCabine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/simulation/EvenementFermeturePorteCabine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/simulation/Cabine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/simulation/Cabine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/simulation/Etage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/simulation/Etage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/simulation/EvenementArriveePassagerPalier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/simulation/EvenementArriveePassagerPalier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/simulation/EvenementFermeturePorteCabine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/simulation/EvenementOuverturePorteCabine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/simulation/EvenementOuverturePorteCabine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/simulation/EvenementPassageCabinePalier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/simulation/EvenementPassageCabinePalier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/simulation/EvenementPietonArrivePalier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/simulation/EvenementPietonArrivePalier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/simulation/Passager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/simulation/Passager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cabine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cabine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Etage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Etage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EvenementArriveePassagerPalier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EvenementArriveePassagerPalier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EvenementFermeturePorteCabine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EvenementFermeturePorteCabine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EvenementOuverturePorteCabine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EvenementOuverturePorteCabine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EvenementPassageCabinePalier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EvenementPassageCabinePalier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EvenementPietonArrivePalier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EvenementPietonArrivePalier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Passager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Passager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +47,14 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/SIM" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -42,10 +63,11 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Cours\S4\SIM\simulation2\src" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Cours\S4\SIM\Simulation\simulation\src" />
       <recent name="E:\Cours\S4\SIM\simulation2\src" />
     </key>
   </component>
@@ -86,7 +108,8 @@
       <workItem from="1581341176732" duration="4957000" />
       <workItem from="1581412386701" duration="169000" />
       <workItem from="1581498949422" duration="1554000" />
-      <workItem from="1581500559126" duration="2963000" />
+      <workItem from="1581500559126" duration="4304000" />
+      <workItem from="1582557417635" duration="4642000" />
     </task>
     <task id="LOCAL-00001" summary="1er iteration">
       <created>1580291306025</created>
@@ -165,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581502755162</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Etape 2">
+      <created>1581503547620</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1581503547620</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,38 +233,46 @@
     <option name="LAST_COMMIT_MESSAGE" value="Etape 2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="389" y="6" key="CommitChangelistDialog2" timestamp="1581502753974">
+    <state x="389" y="6" key="CommitChangelistDialog2" timestamp="1581503546401">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="389" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1581502753974" />
-    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1581503194336">
+    <state x="389" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1581503546401" />
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1582557960046">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1581503194336" />
-    <state width="1493" height="240" key="GridCell.Tab.0.bottom" timestamp="1581503309139">
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582557960046" />
+    <state width="1493" height="240" key="GridCell.Tab.0.bottom" timestamp="1582562137702">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="240" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581503309139" />
-    <state width="1493" height="240" key="GridCell.Tab.0.center" timestamp="1581503309139">
+    <state width="1493" height="240" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582562137702" />
+    <state width="1493" height="240" key="GridCell.Tab.0.center" timestamp="1582562137702">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="240" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581503309139" />
-    <state width="1493" height="240" key="GridCell.Tab.0.left" timestamp="1581503309139">
+    <state width="1493" height="240" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582562137702" />
+    <state width="1493" height="240" key="GridCell.Tab.0.left" timestamp="1582562137702">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="240" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581503309139" />
-    <state width="1493" height="240" key="GridCell.Tab.0.right" timestamp="1581503309139">
+    <state width="1493" height="240" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582562137702" />
+    <state width="1493" height="240" key="GridCell.Tab.0.right" timestamp="1582562137702">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="240" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581503309139" />
+    <state width="1493" height="240" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582562137702" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1581500512373">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1581500512373" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1581502756710">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1581503550777">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1581502756710" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1581503550777" />
+    <state x="338" y="15" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582560039367">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="338" y="15" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1582560039367" />
+    <state x="499" y="178" key="extract.method.dialog" timestamp="1582561042479">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="178" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1582561042479" />
     <state x="729" y="84" width="672" height="677" key="run.anything.popup" timestamp="1581501938277">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

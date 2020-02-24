@@ -4,7 +4,7 @@ public class Etage extends Global {
     /* Dans cette classe, vous pouvez ajouter/enlever/modifier/corriger les méthodes, mais vous ne
        pouvez pas ajouter des attributs (variables d'instance).
     */
-
+    
     private int numéro;
     /* Le numéro de l'Etage du point de vue de l'usager (et non pas l'index correspondant
        dans le tableau.
@@ -91,6 +91,12 @@ public class Etage extends Global {
 	assert passager != null;
 	passagers.add(passager);
     }
+
+    public void supprimer(Passager p){
+    	assert p!= null;
+    	assert passagers.contains(p);
+    	passagers.remove(p);
+	}
 
     public long arrivéeSuivante() {
 	return poissonFrequenceArrivee.suivant();
